@@ -1,7 +1,13 @@
+import styles from './FeedbackOptions.module.scss';
+
 const FeedbackOptions = ({ options, onLeaveFeedback }) => (
-  <div>
+  <div className={styles.divbutton}>
     {options.map(option => (
-      <button key={option} onClick={() => onLeaveFeedback(option)}>
+      <button
+        className={styles.button}
+        key={option}
+        onClick={() => onLeaveFeedback(option)}
+      >
         {option[0].toUpperCase() + option.slice(1)}
       </button>
     ))}

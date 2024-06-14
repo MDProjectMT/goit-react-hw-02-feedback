@@ -1,11 +1,12 @@
 import Notification from 'components/Notification/Notification';
+import styles from './Statistic.module.scss';
 
 const Statistic = ({ good, neutral, bad, total, positivePercentage }) => {
   if (total === 0) {
-    return <Notification></Notification>;
+    return <Notification className={styles.notification}></Notification>;
   }
   return (
-    <div>
+    <div className={styles.statistic}>
       <p>Good: {good}</p>
       <p>Neutral: {neutral}</p>
       <p>Bad: {bad}</p>
