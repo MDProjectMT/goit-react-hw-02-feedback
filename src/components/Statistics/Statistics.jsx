@@ -1,4 +1,4 @@
-import Notification from 'components/Notification/Notification';
+import Notification from '../Notification/Notification';
 import styles from './Statistic.module.scss';
 
 const Statistic = ({ good, neutral, bad, total, positivePercentage }) => {
