@@ -54,9 +54,5 @@ class Feedback extends Component {
     );
   }
 }
-Feedback.propTypes = {
-  good: PropTypes.number,
-  neutral: PropTypes.number,
-  bad: PropTypes.number,
-};
+
 export default Feedback;
