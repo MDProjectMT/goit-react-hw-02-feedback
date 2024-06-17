@@ -12,7 +12,7 @@ export const App = () => {
           color: '#010101',
         }}
       >
-        React homework-02
+        React homework-02 feedback
       </div>
       <div>
         <Feedback />
